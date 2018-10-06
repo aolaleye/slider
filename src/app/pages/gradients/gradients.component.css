@@ -1,0 +1,7 @@
+.number-gradients {
+    background-image: linear-gradient(40deg, #8a47f5 , #24eae1);
+}
+
+.bg-gradients {
+    background-image: linear-gradient(to right, #8a47f5 , #24eae1);
+}

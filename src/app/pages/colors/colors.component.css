@@ -1,0 +1,7 @@
+.number-colors {
+    background-image: linear-gradient(230deg,#ff4592 , yellow);
+}
+
+.bg-colors {
+    background-image: linear-gradient(to left,#ff4592 , yellow);
+}
