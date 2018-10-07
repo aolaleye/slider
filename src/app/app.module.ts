@@ -1,11 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { GradientsComponent, PresetsComponent, ColorsComponent, Error404Component} from './pages/index';
-import { appRoutes } from './nav/routes';
+import { AppRouting } from './nav/routes';
 import 'hammerjs';
 
 
@@ -13,7 +12,7 @@ import 'hammerjs';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(appRoutes)
+    AppRouting
   ],
   declarations: [
     AppComponent,
