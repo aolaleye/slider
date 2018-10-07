@@ -277,7 +277,7 @@ module.exports = ".number-colors {\n    background-image: linear-gradient(230deg
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" (swiperight)=\"goBack()\">\n\n    <div class=\"info\">\n        <div class=\"number number-colors delay\">3</div>\n        <h1 class=\"main-header delay\">Colors</h1>\n        <h5 class=\"sub-header delay\">Pick any color</h5>\n    </div>\n\n\n    <div class=\"bg bg-colors\" (swiperight)=\"goBack()\">\n        <img src=\"../../../assets/pipette.svg\" class=\"delay\">\n    </div>\n\n</div>"
+module.exports = "<div class=\"container\" (swiperight)=\"goBack()\">\n\n    <div class=\"info\">\n        <div class=\"number number-colors delay\">3</div>\n        <h1 class=\"main-header delay\">Colors</h1>\n        <h5 class=\"sub-header delay\">Pick any color</h5>\n    </div>\n\n\n    <div class=\"bg bg-colors\" (swiperight)=\"goBack()\">\n        <img src=\"assets/pipette.svg\" class=\"delay\">\n    </div>\n\n</div>"
 
 /***/ }),
 
@@ -343,7 +343,7 @@ module.exports = ".number-gradients {\n    background-image: linear-gradient(40d
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" (swipeleft)=\"goForward()\">\n\n    <div class=\"info\">\n        <div class=\"number number-gradients delay\">1</div>\n        <h1 class=\"main-header delay\">Gradients</h1>\n        <h5 class=\"sub-header delay\">Start, end, angle</h5>\n    </div>\n\n\n    <div class=\"bg bg-gradients\">\n        <img src=\"../../../assets/drop.svg\" class=\"delay\">\n    </div>\n\n</div>"
+module.exports = "<div class=\"container\" (swipeleft)=\"goForward()\">\n\n    <div class=\"info\">\n        <div class=\"number number-gradients delay\">1</div>\n        <h1 class=\"main-header delay\">Gradients</h1>\n        <h5 class=\"sub-header delay\">Start, end, angle</h5>\n    </div>\n\n\n    <div class=\"bg bg-gradients\">\n        <img src=\"assets/drop.svg\" class=\"delay\">\n    </div>\n\n</div>"
 
 /***/ }),
 
@@ -438,7 +438,7 @@ module.exports = ".number-presets {\n    background-image: linear-gradient(20deg
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" (swiperight)=\"goBack()\" (swipeleft)=\"goForward()\">\n\n    <div class=\"info\">\n        <div class=\"number number-presets delay\">2</div>\n        <h1 class=\"main-header delay\">Presets</h1>\n        <h5 class=\"sub-header delay\">Manage presets</h5>\n    </div>\n\n\n    <div class=\"bg bg-presets\">\n        <img src=\"../../../assets/painter-palette.svg\" class=\"delay\">\n    </div>\n\n</div>"
+module.exports = "<div class=\"container\" (swiperight)=\"goBack()\" (swipeleft)=\"goForward()\">\n\n    <div class=\"info\">\n        <div class=\"number number-presets delay\">2</div>\n        <h1 class=\"main-header delay\">Presets</h1>\n        <h5 class=\"sub-header delay\">Manage presets</h5>\n    </div>\n\n\n    <div class=\"bg bg-presets\">\n        <img src=\"assets/painter-palette.svg\" class=\"delay\">\n    </div>\n\n</div>"
 
 /***/ }),
 
