@@ -77,20 +77,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _pages_index__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/index */ "./src/app/pages/index.ts");
-/* harmony import */ var _nav_routes__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./nav/routes */ "./src/app/nav/routes.ts");
-/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
-/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _pages_index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/index */ "./src/app/pages/index.ts");
+/* harmony import */ var _nav_routes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./nav/routes */ "./src/app/nav/routes.ts");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_6__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
 
 
 
@@ -105,18 +103,18 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(_nav_routes__WEBPACK_IMPORTED_MODULE_6__["appRoutes"])
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"],
+                _nav_routes__WEBPACK_IMPORTED_MODULE_5__["AppRouting"]
             ],
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-                _pages_index__WEBPACK_IMPORTED_MODULE_5__["GradientsComponent"],
-                _pages_index__WEBPACK_IMPORTED_MODULE_5__["PresetsComponent"],
-                _pages_index__WEBPACK_IMPORTED_MODULE_5__["ColorsComponent"],
-                _pages_index__WEBPACK_IMPORTED_MODULE_5__["Error404Component"]
+                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+                _pages_index__WEBPACK_IMPORTED_MODULE_4__["GradientsComponent"],
+                _pages_index__WEBPACK_IMPORTED_MODULE_4__["PresetsComponent"],
+                _pages_index__WEBPACK_IMPORTED_MODULE_4__["ColorsComponent"],
+                _pages_index__WEBPACK_IMPORTED_MODULE_4__["Error404Component"]
             ],
             providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -179,24 +177,29 @@ var routerTransition = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["
 /*!*******************************!*\
   !*** ./src/app/nav/routes.ts ***!
   \*******************************/
-/*! exports provided: appRoutes */
+/*! exports provided: AppRouting */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "appRoutes", function() { return appRoutes; });
-/* harmony import */ var _pages_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../pages/index */ "./src/app/pages/index.ts");
-/* harmony import */ var _pages_404_404_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../pages/404/404.component */ "./src/app/pages/404/404.component.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRouting", function() { return AppRouting; });
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _pages_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../pages/index */ "./src/app/pages/index.ts");
+/* harmony import */ var _pages_404_404_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../pages/404/404.component */ "./src/app/pages/404/404.component.ts");
 
 
-var appRoutes = [
-    { path: 'gradients', component: _pages_index__WEBPACK_IMPORTED_MODULE_0__["GradientsComponent"], data: { state: 'gradients' } },
-    { path: 'presets', component: _pages_index__WEBPACK_IMPORTED_MODULE_0__["PresetsComponent"], data: { state: 'presets' } },
-    { path: 'colors', component: _pages_index__WEBPACK_IMPORTED_MODULE_0__["ColorsComponent"], data: { state: 'colors' } },
-    { path: '404', component: _pages_404_404_component__WEBPACK_IMPORTED_MODULE_1__["Error404Component"] },
+
+var routes = [
+    { path: 'gradients', component: _pages_index__WEBPACK_IMPORTED_MODULE_1__["GradientsComponent"], data: { state: 'gradients' } },
+    { path: 'presets', component: _pages_index__WEBPACK_IMPORTED_MODULE_1__["PresetsComponent"], data: { state: 'presets' } },
+    { path: 'colors', component: _pages_index__WEBPACK_IMPORTED_MODULE_1__["ColorsComponent"], data: { state: 'colors' } },
+    { path: '404', component: _pages_404_404_component__WEBPACK_IMPORTED_MODULE_2__["Error404Component"] },
     { path: '', redirectTo: '/gradients', pathMatch: 'full' },
     { path: '**', redirectTo: '/404' },
 ];
+var AppRouting = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot(routes, {
+    useHash: true
+});
 
 
 /***/ }),
